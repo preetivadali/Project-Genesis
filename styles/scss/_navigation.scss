@@ -1,0 +1,33 @@
+.nav_header{
+    width:100%;
+    max-width: 1109px;
+    min-height: 23px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .logo {
+        width: 91px;
+        height: 20px;
+      }
+      
+      ul {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        list-style-type: none;
+        font-weight: 700;
+        font-size: 18px;
+    
+        li a {
+         color: color.$Black;
+          font-weight: bold;
+          
+          }
+        }
+      }
+    
+    
+
+
+
+

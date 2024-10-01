@@ -1,0 +1,118 @@
+@use "fonts";
+@use "color";
+
+@import "navigation";
+@import "footer";
+@import "images";
+
+
+.intro{
+h5{
+    font-size: 22px;
+    letter-spacing: -0.42;
+    color: $blue;
+    position: relative;
+    margin-top: 90px;
+  }
+
+
+p{
+    width:100%;
+    max-width:635px ;
+    min-height: 191px;
+    line-height: 60px;
+    font-size: 40px;
+}
+& span {
+    color: $blue;
+  }
+}
+.section-2 {
+    p {
+      font-size: 28px;
+      line-height: 38px;
+      font-weight: 400;
+      width: 100%;
+      max-width: 635px;
+      min-height: 106px;
+    }
+  
+    .list {
+      display: flex;
+      justify-content: space-between;
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+  
+        li {
+          font-size: 20px;
+          line-height: 2;
+          font-weight: 500;
+          color: $light-gray;
+        }
+      }
+    }
+  }
+  
+  .section-3 {
+    
+        padding: 20px;
+
+    .awards {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 20px;
+      align-items: start;
+      padding-top: 20px;
+  
+      .award-list {
+        display: grid;
+        grid-column: 1 / span 4;
+        gap: 20px;
+        padding: 10px 0;
+        border-bottom: 1px solid #dddddd;
+        
+  
+        h2 {
+          font-size: 20px;
+          margin-bottom:15px;
+          font-weight: 600;
+        }
+  
+        .category {
+          grid-column: 2 / 3;
+          font-size: 18px;
+          font-weight: 500;
+          align-self: center;
+          color: #333;
+          margin-bottom: 0.5rem;
+        }
+  
+        .details {
+            grid-column: 3 / 4;
+           display: flex;
+           flex-direction: column;
+           font-size: 16px;
+          
+          justify-content: space-between;
+          
+          div {
+            &:first-of-type {
+              flex-grow: 1;
+              margin-right: 1rem;
+              font-weight: 400;
+              line-height: 1.4;
+            }
+  
+            &:last-of-type {
+              font-weight: 500;
+              color: #666;
+              white-space: nowrap;
+            }
+          }
+        }
+      }
+    }
+  }
+  
