@@ -1,0 +1,28 @@
+.images {
+  display: flex; // Use flexbox for the outer container
+  max-width: 600px;
+  padding: 10px;
+  justify-content: space-between; // Distribute columns evenly
+  gap: 10px; // Small gap between columns
+}
+
+.column {
+  flex: 1; // Each column will take equal space
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; // Space out the images vertically
+}
+
+.column div {
+  flex-grow: 1; // Stretch each image to distribute remaining space equally
+  margin-bottom: 10px;
+  display: flex; // Use flex on the image container to align images correctly
+}
+
+.column img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; // Ensures images fill their div proportionally
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
