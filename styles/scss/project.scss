@@ -1,0 +1,32 @@
+@import "./fonts";
+@import "./color"; 
+@import "navigation";
+@import "footer";
+@import 'body';
+
+
+.outer-div{
+    display: flex;
+    justify-content: space-between;
+
+}
+.wrap{
+    display: flex;
+    justify-content: space-between;
+}
+.sidebar-item, .side-item{
+margin-bottom: 30px ;
+border-bottom: 1px solid lightgray;
+padding-bottom: 10px;
+}
+.side-item{
+    text-align: end;
+    
+}
+.sidebar-item{
+    color: gray;
+}
+.description{
+    padding-block: 30px;
+}
+

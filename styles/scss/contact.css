@@ -1,0 +1,133 @@
+.nav_header, .nav_footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+.nav_header .logo, .nav_footer .logo {
+  height: 40px;
+}
+.nav_header ul, .nav_footer ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+.nav_header ul li a, .nav_footer ul li a {
+  text-decoration: none;
+  color: #111111;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+.nav_header ul li a:hover, .nav_footer ul li a:hover {
+  color: #4A4FF2;
+}
+
+footer {
+  border-top: 1px solid black;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .nav_footer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+footer .nav_footer a {
+  text-decoration: none;
+  color: black;
+  margin-right: 20px;
+  font-size: 14px;
+}
+footer .nav_footer a:hover {
+  color: #4A4FF2;
+}
+footer .nav_footer i {
+  font-size: 18px;
+  margin-left: 10px;
+  transition: color 0.3s;
+}
+footer .nav_footer i:hover {
+  color: #4A4FF2;
+}
+footer .logo {
+  height: 30px;
+}
+
+body {
+  font-family: "Mulish", sans-serif;
+  color: black;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-inline: 80px;
+  padding-inline: 20px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px 0;
+}
+main .section {
+  text-align: left;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+main .section h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+main .section p {
+  font-size: 16px;
+  color: black;
+  line-height: 1.6;
+}
+main .form-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 40px;
+}
+main .form-section input, main .form-section textarea {
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid black;
+  font-size: 16px;
+  font-family: "Mulish", sans-serif;
+  width: 100%;
+  resize: none;
+}
+main .form-section button {
+  width: 80px;
+  padding: 10px;
+  background-color: #4A4FF2;
+  color: beige;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+main .form-section button:hover {
+  background-color: green;
+}
+main .map {
+  width: 100%;
+  margin-bottom: 40px;
+}
+main .map img {
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 5px;
+}/*# sourceMappingURL=contact.css.map */

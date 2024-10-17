@@ -8,23 +8,23 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="styles/css/images.css">
-    <link rel="stylesheets" href="styles/css/normalize.css">
-    <link rel="stylesheets" href="styles/css/index.css">
+    <link rel="stylesheet" href="styles/scss/images.css">
+    <link rel="stylesheet" href="styles/css/normalize.css">
+    <link rel="stylesheet" href="styles/scss/index.css">
     
 
     <title>Home-Genesis</title>
 </head>
 <body>
     
-<nav class="nav_header">
-   
-    <img class="logo" src="Images/Logo.svg">
-        <ul>
+
+    <nav class="nav_header">
+        <a href="./"><img class="logo" src="Images/Logo.svg"></a>
+            <ul>
                 <li><a href="project.html">Projects</a></li>
                 <li><a href="contact.html">Contact</a></li>
-    </ul>
-</nav>
+            </ul>
+    </nav>
     
 
     <main>
@@ -56,15 +56,19 @@
           <div><img src="Images/Image-12.png" alt="Image 12"></div>
         </div>
       </div>
-    </section>
-     <section class="section-2">
-        <p>We love work hard and explore new things that's why we cover a lot of things. Check our service list and view details</p>
+    
+     <section  class="section-2">
+        
+       <div> <p>We love work hard and explore new things that's why we cover a lot of things. Check our service list and view details</p></div>
+
         <div class="list">
             <ul>
                 <li>Multimedia</li>
                 <li>Interactive Design</li>
                 <li>Branding</li>
             </ul>
+        </div>
+        <div class="list">
             <ul>
                 <li>Creative design</li>
                 <li>Packaging</li>
@@ -72,11 +76,13 @@
             </ul>
         </div>
     </section>
+    
+   
     <section class="section-3">
 
         <div class="awards">
             <div class="award-list">
-                <h2>Awwwards</h2>
+                <h2>Awards</h2>
                 <div class="category">Site of the day</div>
                 <div class="details">
                     <div>Genesis UI Kit<br>Application that helps to find nearest sport centres</div>
@@ -88,7 +94,12 @@
                     <div class="year">2018</div>
                 </div>
             </div>
-    
+        </div>
+    </section>
+             
+
+     <section class="section-4">
+        <div class="awards">
             <div class="award-list">
                 <h2>CSSDesignAwards</h2>
                 <div class="category">Site of the day</div>
@@ -103,6 +114,7 @@
                 </div>
             </div>
         </div>
+        
     </section>
 
     <footer>
@@ -111,13 +123,14 @@
             <img class="logo" src="Images/Logo.svg">
        
         <div>
-            <a href="/Pages/project.html">Projects</a>
-            <a href="/Pages/contact.html">Contact</a>
+            <a href="project.html">Projects</a>
+            <a href="contact.html">Contact</a>
             <a href="#"><i class="fa-brands fa-instagram"></i></a> 
            <a href="#"><i class="fa-brands fa-twitter"></i></a>
         </div>
+        </nav>
     </footer>
 
-
+        
 </body>
 </html>

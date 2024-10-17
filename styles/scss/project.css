@@ -1,0 +1,93 @@
+.nav_header, .nav_footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+.nav_header .logo, .nav_footer .logo {
+  height: 40px;
+}
+.nav_header ul, .nav_footer ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+.nav_header ul li a, .nav_footer ul li a {
+  text-decoration: none;
+  color: #111111;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+.nav_header ul li a:hover, .nav_footer ul li a:hover {
+  color: #4A4FF2;
+}
+
+footer {
+  border-top: 1px solid black;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .nav_footer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+footer .nav_footer a {
+  text-decoration: none;
+  color: black;
+  margin-right: 20px;
+  font-size: 14px;
+}
+footer .nav_footer a:hover {
+  color: #4A4FF2;
+}
+footer .nav_footer i {
+  font-size: 18px;
+  margin-left: 10px;
+  transition: color 0.3s;
+}
+footer .nav_footer i:hover {
+  color: #4A4FF2;
+}
+footer .logo {
+  height: 30px;
+}
+
+body {
+  font-family: "Mulish", sans-serif;
+  color: black;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-inline: 80px;
+  padding-inline: 20px;
+}
+
+.outer-div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sidebar-item, .side-item {
+  margin-bottom: 30px;
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 10px;
+}
+
+.side-item {
+  text-align: end;
+}
+
+.sidebar-item {
+  color: gray;
+}
+
+.description {
+  padding-block: 30px;
+}/*# sourceMappingURL=project.css.map */

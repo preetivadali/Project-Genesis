@@ -1,19 +1,24 @@
-@use "fonts";
-@use "color"; 
-@import "navigation";
-@import "footer";
-@import "images";
+// Importing partials using the @use rule. 
+// Namespace usage helps prevent conflicts and provides clarity.
+// @use "fonts";
+// @use "color";
+// @use "navigation" as nav; // Aliasing if needed for clarity
+// @use "footer";
+// @use "images";
+@import 'color', 'fonts', 'footer', 'navigation';
+@import 'body';
+// Styling the .intro section
 
 .intro {
-  & h5 {
+  h5 {
     font-size: 22px;
-    letter-spacing: -0.42;
-    color: color.$blue; 
+    letter-spacing: -0.42px; // Ensure units are specified
+    color: $blue; // Accessing the blue color from the color namespace
     position: relative;
     margin-top: 90px;
   }
 
-  & p {
+  p {
     width: 100%;
     max-width: 635px;
     min-height: 191px;
@@ -21,13 +26,16 @@
     font-size: 40px;
   }
 
-  & span {
-    color: color.$blue; 
+  span {
+    color:red // Consistent variable usage
   }
 }
 
+// Styling the .section-2 class
 .section-2 {
-  & p {
+  display: flex;
+  justify-content: space-between;
+  p {
     font-size: 28px;
     line-height: 38px;
     font-weight: 400;
@@ -37,25 +45,23 @@
   }
 
   .list {
-    display: flex;
-    justify-content: space-between;
-    
     ul {
       list-style: none;
       padding: 0;
       margin: 0;
 
-      & li {
+      li {
         font-size: 20px;
         line-height: 2;
         font-weight: 500;
-        color: color.$light-gray; // reference color variable from color partial
+        color: $light-gray; 
       }
     }
   }
 }
 
-.section-3 {
+// Styling the .section-3 and .section-4 classes
+.section-3, .section-4 {
   padding: 20px;
 
   .awards {
@@ -78,7 +84,7 @@
         font-weight: 600;
       }
 
-      & .category {
+      .category {
         grid-column: 2 / 3;
         font-size: 18px;
         font-weight: 500;
@@ -92,10 +98,9 @@
         display: flex;
         flex-direction: column;
         font-size: 16px;
-
         justify-content: space-between;
 
-        & div {
+        div {
           &:first-of-type {
             flex-grow: 1;
             margin-right: 1rem;
